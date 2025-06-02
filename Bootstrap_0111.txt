@@ -1,0 +1,666 @@
+What is Bootstrap?
+==================
+
+   Bootstrap is a popular front-end framework for building responsive and mobile- first websites and web applications
+   Bootstrap was originally developed by Twitter and released as an open-source project in 2011.
+   Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+   It supports various devices and screen sizes, responsive design ensures a consistent user experience across all platforms. 
+   Developed by Mark Otto and Jacob Thornton.
+   Boot Strap 5th version
+
+
+Features:
+=========
+  * Responsive design
+  * Pre-styled components
+  * Grid system
+  * JavaScript plugin
+  * Customization options
+
+
+Open Bootstrap and Link it
+
+Show break points
+
+Heading Classes:
+================
+  h1 to h6
+
+    <p class="h1">h1 Bootstrap Class Heading</p>
+   
+
+Display heading Classes:
+========================
+  display-1 to display-6
+
+    <h1 class="display-1"> Content </h1>
+    
+
+Note:
+
+    muted - gray, primary - blue, success - green, info - cyan, warning - yellow, danger - red, secondary - light gray, dark - dark gray, body - black, light - light gray, white - white
+
+
+Text Colors:
+============
+    <p class="text-muted">This text is muted.</p>
+class name:
+    text-muted, text-primary, text-success, text-info, text-warning, text-danger, text-secondary, text-dark, text-body, text-light, text-white
+
+
+BG Color:
+=========
+   <h1 class="bg-success"> Content </h1>
+
+   bg-info, bg-warning, bg-danger, bg-secondary, bg-dark, bg-light, bg-primary
+
+
+Text bg color:
+==============
+    <p class="text-bg-primary">This text is important.</p>
+
+    text-bg-success, text-bg-info, text-bg-warning, text-bg-danger, text-bg-secondary, text-bg-dark, text-bg-light
+
+A:(Need to see for 2 clock Batch)
+==
+
+<p><a href="#" class="link-primary">Primary link</a></p>
+
+<p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Primary link</a></p>
+
+
+Border:
+=======
+
+<style>
+       body{
+            background-color: darkblue;
+        }
+        .border{
+            margin: 10px;
+            height: 200px;
+            width: 200px;
+        }
+
+</style>
+
+    <div class="border border-dark"></div>
+    <div class="border border-0"></div>
+
+To remove border
+    <div class="border border-top-0"></div>
+    <div class="border border-end-0"></div>
+    <div class="border border-bottom-0"></div>
+    <div class="border border-start-0"></div>
+
+border-width
+border-1, border-2, border-3, border-4, border-5
+
+border-radius
+rounded-0, rounded-1, rounded-2, rounded-3, rounded-4, rounded-5.
+
+Buttons:
+========
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+
+    btn-secondary, btn-success, btn-info, btn-warning, btn-danger, btn-dark, btn-light, btn-link
+
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+
+    same color code will be used for outline also
+
+    btn-lg, btn-sm, active, disabled
+
+    we can also use btn cls to a & input tags 
+
+Button Group:
+  <div class="btn-group">
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+  <button type="button" class="btn btn-primary">Sony</button>
+  </div>
+
+btn-group-lg, btn-group-sm, btn-group-vertical
+ 
+
+Badges:
+=======
+
+ <span class="badge bg-primary">Primary</span>
+rounded-pill
+
+<button type="button" class="btn btn-primary">
+  Messages <span class="badge bg-danger">4</span>
+</button>   
+
+
+Padding Classes
+================
+Setting padding on all sides:
+
+p-0 : Removes all padding (padding: 0;).
+p-1 : Adds a small padding (padding: 0.25rem;).
+p-2 : Adds a slightly larger padding (padding: 0.5rem;).	
+p-3 : Adds a medium padding (padding: 1rem;).
+p-4 : Adds a large padding (padding: 1.5rem;).
+p-5 : Adds an extra-large padding (padding: 3rem;).
+
+<h1 class="p-3">Content</h1>
+
+Setting padding on specific sides:
+
+pt-0 : padding top.
+pe-2 : padding right.
+pb-2 : padding bottom.
+ps-3 : padding left.
+px-4 : Sets horizontal padding (left and right).
+py-5 : Sets vertical padding (top and bottom).
+
+Padding:
+Four sides = p-0 to p-5
+left & Right = px-0 to px-5
+top & bottom = py-0 to py-5
+left = ps-0 to ps-5(start)
+right = pe-0 to pe-5(end)
+top = pt-0 to pt-5(top)
+bottom = pb-0 to pb-5(bottom)
+
+
+Margin:
+=======
+Setting margin on all sides:
+
+m-0 to m-5
+
+Setting margin on specific sides:
+
+mt-0, me-1, mb-2, ms-3, mx-4, my-5 
+
+.m-auto 
+
+Margin:
+Four sides = m-0 to m-5
+left & Right = mx-0 to mx-5
+top & bottom = my-0 to my-5
+left = ms-0 to ms-5(start)
+right = me-0 to me-5(end)
+top = mt-0 to mt-5(top)
+bottom = mb-0 to mb-5(bottom)
+
+Table:
+======
+
+ table: Basic table (table)
+ table, table-striped, table-bordered, table-hover, table-sm, border-primary
+
+Colors
+   table-primary: Primary background (table, tr, td, th)
+   table-primary, table-secondary, table-success, table-danger, table-warning, table-info, table-light, table-dark
+
+table-responsive: Responsive wrapper (div)
+
+You can also decide when the table should get a scrollbar, depending on the screen width:
+
+Class	               Screen width
+.table-responsive-sm	< 576px
+.table-responsive-md	< 768px
+.table-responsive-lg	< 992px
+.table-responsive-xl	< 1200px
+.table-responsive-xxl	< 1400px
+
+Adds a horizontal scrollbar when the screen width is less than 576 pixels (small screens).
+
+Image:
+======
+.		
+Makes the image scale with the parent element, maintaining its aspect ratio.
+
+.img-thumbnail
+Adds a border and some padding around the image to give it a thumbnail effect.
+
+.rounded, .rounded-circle
+
+
+Alerts:
+=======
+
+alert: Base class
+
+color
+  alert-primary - same color code will be used here
+
+alert-link: Styles links inside alerts.
+alert-dismissible: Allows the alert to be closed.
+btn-close: Provides a close button for dismissible alerts.
+
+
+<div class="alert alert-success">
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+<div class="alert alert-success">
+  <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+</div>
+
+<div class="alert alert-success alert-dismissible fade show">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+</div>
+
+
+Progress bar:
+=============
+
+progress: base class(parent)
+
+child element:
+
+progress-bar progress-bar-striped progress-bar-animated
+
+color:
+  bg-success...
+
+<div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+  </div>
+
+ <div class="progress">
+    <div class="progress-bar bg-success" style="width:70%">
+      Free Space
+    </div>
+    <div class="progress-bar bg-warning" style="width:20%">
+      Warning
+    </div>
+    <div class="progress-bar bg-danger" style="width:10%">
+      Danger
+    </div>
+  </div>
+
+
+
+Spinners:
+=========
+
+ spinner-border : base class
+ <div class="spinner-border text-muted"></div>
+
+ <div class="spinner-grow text-primary"></div>
+
+spinner-border-sm, spinner-grow-sm
+
+<button class="btn btn-primary">
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</button>
+
+
+Display:
+========
+<div class="d-inline p-2 text-bg-primary">d-inline</div>
+<div class="d-inline p-2 text-bg-dark">d-inline</div>
+
+<span class="d-block p-2 text-bg-primary">d-block</span>
+<span class="d-block p-2 text-bg-dark">d-block</span>
+
+
+Flex:
+=====
+<div class="d-flex flex-row mb-3">
+  <div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>
+<div class="d-flex flex-row-reverse">
+  <div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>
+
+justify-content-start, justify-content-end, justify-content-center, justify-content-between, justify-content-around, justify-content-evenly.
+
+align-items-start, align-items-end, align-items-center, align-items-baseline, align-items-stretch.
+
+
+Object fit:
+===========
+
+<img src="..." class="object-fit-contain border rounded" alt="...">
+<img src="..." class="object-fit-cover border rounded" alt="...">
+<img src="..." class="object-fit-fill border rounded" alt="...">
+<img src="..." class="object-fit-scale border rounded" alt="...">
+<img src="..." class="object-fit-none border rounded" alt="...">
+
+Opacity
+=======
+<div class="opacity-100">...</div>
+<div class="opacity-75">...</div>
+<div class="opacity-50">...</div>
+<div class="opacity-25">...</div>
+<div class="opacity-0">...</div>
+
+Overflow:
+=========
+
+<div class="overflow-auto">...</div>
+<div class="overflow-hidden">...</div>
+<div class="overflow-visible">...</div>
+<div class="overflow-scroll">...</div>
+
+
+Position:
+=========
+top - for the vertical top position
+start - for the horizontal left position (in LTR)
+bottom - for the vertical bottom position
+end - for the horizontal right position (in LTR)
+
+<div class="position-relative">
+  <div class="position-absolute top-0 start-0"></div>
+  <div class="position-absolute top-0 end-0"></div>
+  <div class="position-absolute top-50 start-50"></div>
+  <div class="position-absolute bottom-50 end-50"></div>
+  <div class="position-absolute bottom-0 start-0"></div>
+  <div class="position-absolute bottom-0 end-0"></div>
+</div>
+
+Shadows:
+========
+
+<div class="shadow-none p-3 mb-5 bg-body-tertiary rounded">No shadow</div>
+<div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">Small shadow</di v>
+<div class="shadow p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div>
+<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>
+
+
+Height & Width:
+===============
+
+<div class="w-25 p-3">Width 25%</div>
+<div class="w-50 p-3">Width 50%</div>
+<div class="w-75 p-3">Width 75%</div>
+<div class="w-100 p-3">Width 100%</div>
+<div class="w-auto p-3">Width auto</div>
+
+<div style="height: 100px;">
+  <div class="h-25 d-inline-block" style="width: 120px;">Height 25%</div>
+  <div class="h-50 d-inline-block" style="width: 120px;">Height 50%</div>
+  <div class="h-75 d-inline-block" style="width: 120px;">Height 75%</div>
+  <div class="h-100 d-inline-block" style="width: 120px;">Height 100%</div>
+  <div class="h-auto d-inline-block" style="width: 120px;">Height auto</div>
+</div>
+
+Text:
+====
+
+<p class="text-lowercase">Lowercased text.</p>
+text-uppercase, text-capitalize
+
+
+<p class="fs-1">.fs-1 text</p>
+fs-2, fs-3, fs-4, fs-5, fs-6
+
+
+<p class="fw-bold">Bold text.</p>
+fw-bold, fw-bolder, fw-semibold, fw-medium, fw-normal, fw-light, fw-lighter, fst-italic, fst-normal
+
+lh-1, lh-sm, lh-base, lh-lg
+
+text-decoration-underline, text-decoration-line-through, text-decoration-none
+
+align-baseline, align-top, align-middle, align-bottom, align-text-top, align-text-bottom
+
+
+Jumborton:
+==========
+<div class="mt-4 p-5 bg-primary text-white rounded">
+    <h1>Jumbotron Example</h1> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p> 
+</div>
+
+
+Pagination:
+===========
+<ul class="pagination pagination-sm justify-content-end">
+        <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+        <li class="page-item disabled"><a href="#" class="page-link">1</a></li>
+        <li class="page-item active"><a href="#" class="page-link">2</a></li>
+        <li class="page-item"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+</ul>
+
+size : pagination-lg, pagination-sm 
+
+To Align: justify-content-center justify-content-start, justify-content-end
+
+
+List:
+=====
+<ul class="list-group list-group-flush list-group-numbered list-group-horizontal">
+    <li class="list-group-item active">One</li>
+    <li class="list-group-item disabled">Two</li>
+    <li class="list-group-item list-group-item-success">Three</li>
+</ul>
+
+
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">First item</a>
+  <a href="#" class="list-group-item list-group-item-action">Second item</a>
+  <a href="#" class="list-group-item list-group-item-action">Third item</a>
+</div>
+
+
+Drop - Down:
+============
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Link 1</a></li>
+    <li><a class="dropdown-item" href="#">Link 2</a></li>
+    <li><a class="dropdown-item" href="#">Link 3</a></li>
+  </ul>
+</div>
+
+disabled & active to a tag
+
+Drop end to add div, dropstart & text-end along with dropdown, 
+
+dropup only to parent div
+
+
+Collapse:
+=========
+
+<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapsible</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+
+Nav:
+
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+
+<!-- Centered nav -->
+<ul class="nav justify-content-center">
+
+<!-- Right-aligned nav -->
+<ul class="nav justify-content-end">
+
+active, disabled
+
+
+Tooltip:
+========
+
+ <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hello!">
+    Hover over me!
+  </button>
+
+
+
+Container:
+==========
+
+container-sm
+- container-md
+- container-lg
+- container-xl
+- container-xxl
+- container-fluid
+| Class     |X - small| Small | Medium | Large | X-Large | XX-Large
+| 
+               |<576px| ≥576px|≥768px| ≥992px | ≥1200px | ≥1400px
+| container    | 100% | 540px | 720px | 960px  | 1140px   | 1320px
+| container-sm | 100% | 540px | 720px | 960px  | 1140px   | 1320px
+| container-md | 100% | 100%  | 720px | 960px  | 1140px   | 1320px
+| container-lg | 100% | 100%  | 100%  | 960px  | 1140px   | 1320px
+| container-xl | 100% | 100%  | 100%  | 100%   | 1140px   | 1320px
+|container-xxl | 100% | 100%  | 100%  | 100%   | 100%     | 1320px
+|container-fluid|100% | 100%  | 100%  | 100%   | 100%     | 100%
+
+
+Break Points
+In Bootstrap 5, there are six predefined breakpoints that are based on common device screen sizes, which are as follows:
+
+Extra Small (xs): This breakpoint is for screens with a maximum width of 575.98 pixels. It is typically used for smartphones and other small mobile devices.
+
+Small (sm): This breakpoint is for screens with a width of 576 pixels or larger. It is often used for small tablets and larger smartphones.
+
+Medium (md): This breakpoint is for screens with a width of 768 pixels or larger. It is commonly used for tablets and larger devices.
+
+Large (lg): This breakpoint is for screens with a width of 992 pixels or larger. It is often used for desktops and larger screens.
+
+Extra Large (xl): This breakpoint is for screens with a width of 1200 pixels or larger. It is commonly used for larger desktop screens.
+
+Extra Extra Large (xxl): This breakpoint is for screens with a width of 1400 pixels or larger. It is used for extra large screens.
+
+Navbar:
+=======
+
+fixed-top & sticky-top
+
+Float:
+======
+
+float-start
+float-end
+float-none
+
+
+forms:
+======
+
+<input> and  <textarea> elements with class .form-control get proper form styling
+form-control-lg
+form-control-sm
+
+<form action="/action_page.php">
+  <div class="mb-3 mt-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+  </div>
+  <div class="mb-3">
+    <label for="pwd" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+  </div>
+</form>
+Floating Labels:
+<div class="form-floating mb-3 mt-3">
+  <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+  <label for="email">Email</label>
+</div>
+
+<div class="form-floating mt-3 mb-3">
+  <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+  <label for="pwd">Password</label>
+</div>
+
+
+modals
+=======
+
+Accordian:
+=========
+
+BreadCrump:
+==========
+
+Grid:
+=====
+
+Grid System in Bootstrap
+Bootstrap's grid system typically uses a 12-column layout. This means that the page layout is divided into 12 equal-width columns (* means 1-12)
+col
+row
+col-*
+col-sm-*
+col-md-*
+col-lg-*
+col-xl-*
+col-xxx-*
+
+scrollspy
+=========
+
+
+focus ring:
+===========
+<a href="#" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2">
+  Custom focus ring
+</a>
+
+Offcanvas:
+==========
+
+icon:
+=====
+
+cards:
+======
+
+Features:
+=========
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+Products:
+ <div class="card" style="width:400px">
+    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+
+<div class="card img-fluid" style="width:500px">
+    <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+</div>
